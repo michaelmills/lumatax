@@ -2,9 +2,11 @@
 
 # check that git submodules are populated
 if [ -z "$(ls -A ./lumatax-portal)" ]; then
-  git init submodule
+  git submodule init
   git submodule update
 fi
+
+sleep 8
 
 # build server
 cd lumatax-server
