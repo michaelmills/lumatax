@@ -1,5 +1,8 @@
 # Michael Mills - LumaTax
 
+<img src="https://github.com/michaelmills/lumatax/blob/main/images/homepage.png" width="900">
+<img src="https://github.com/michaelmills/lumatax/blob/main/images/summary.png" width="900">
+
 ## Prerequisites
 The following software is required:
  * Node.js and Npm
@@ -28,7 +31,7 @@ The following software is required:
    * After it's done building, docker-compose will start up both services and logs for both services will appear.
 
 4. Open a browser and navigate to http://localhost
-  * The angular application uses port 80, so make sure nothing else is using it.
+   * The angular application uses port 80, so make sure nothing else is using it.
 
 
 ## Access the in-memory H2 database
