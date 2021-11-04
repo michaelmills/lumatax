@@ -66,3 +66,13 @@ The following software is required:
     docker run --publish 80:80 --env-file ./lumatax-portal/lumatax-portal.env mrmills/lumatax-portal:1.0.0
 8. Nothing will appear on the terminal
 9. Open http://localhost in browser
+
+---
+
+## If I had more time, I would...
+ * Add angular tests
+ * Add server integration tests
+ * Add integrated automated tests
+ * Add an error message or alert box for failed or invalid file inputs on the UI
+ * Redesign the database with foreign key relationship (dependent on more use cases)
+ * Try out multistage Dockerfiles
