@@ -1,0 +1,6 @@
+[submodule "lumatax-portal"]
+	path = lumatax-portal
+	url = git@github.com:michaelmills/lumatax-portal.git
+[submodule "lumatax-server"]
+	path = lumatax-server
+	url = git@github.com:michaelmills/lumatax-server.git
