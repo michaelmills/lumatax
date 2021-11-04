@@ -3,7 +3,7 @@
 ## Prerequisites
 The following software is required:
  * Node.js and Npm
-  * I recommend installing both using Homebrew: https://changelog.com/posts/install-node-js-with-homebrew-on-os-x
+   * I recommend installing both using Homebrew: https://changelog.com/posts/install-node-js-with-homebrew-on-os-x
 
  * Angular (https://angular.io/guide/setup-local)
 
@@ -15,6 +15,7 @@ The following software is required:
 
  * Docker-compose (https://dockerlabs.collabnix.com/intermediate/workshop/DockerCompose/How_to_Install_Docker_Compose.html)
 
+---
 
 ## Build and Run - Using script (w/ docker-compose)
 1. Open a terminal
@@ -22,9 +23,9 @@ The following software is required:
 2. Navigate to top level folder of this project (Lumatax)
 
 3. Run script './startup.sh'
-  * This will build both the Spring Boot server and Angular frontend
-    The Angular application may take a while to build. If it's stuck on ' 92% chunk asset optimization UglifyJSPlugin' don't be alarmed. It will finish.
-  * After it's done building, docker-compose will start up both services and logs for both services will appear.
+   * This will build both the Spring Boot server and Angular frontend
+     The Angular application may take a while to build. If it's stuck on ' 92% chunk asset optimization UglifyJSPlugin' don't be alarmed. It will finish.
+   * After it's done building, docker-compose will start up both services and logs for both services will appear.
 
 4. Open a browser and navigate to http://localhost
   * The angular application uses port 80, so make sure nothing else is using it.
@@ -36,6 +37,7 @@ The following software is required:
 3. Username is 'sa'
 4. Password is empty
 
+---
 
 ## Build without script
 ### Build Spring Boot server
