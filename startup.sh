@@ -1,5 +1,11 @@
 #!/bin/sh
 
+# check that git submodules are populated
+if [ -z "$(ls -A ./lumatax-portal)" ]; then
+  git init submodule
+  git submodule update
+fi
+
 # build server
 cd lumatax-server
 mvn clean install
