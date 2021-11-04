@@ -61,4 +61,5 @@ The following software is required:
 6. Open another terminal and navigate to the top folder of the lumatax project
 7. Run the angular frontend:
     docker run --publish 80:80 --env-file ./lumatax-portal/lumatax-portal.env mrmills/lumatax-portal:1.0.0
-8. Open http://localhost in browser
+8. Nothing will appear on the terminal
+9. Open http://localhost in browser
