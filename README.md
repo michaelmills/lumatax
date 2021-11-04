@@ -95,4 +95,7 @@ The following software is required:
  * Add integrated automated tests
  * Add an error message or alert box for failed or invalid file inputs on the UI
  * Redesign the database with foreign key relationship (dependent on more use cases)
+ * Redesign the backend API
+    * Have file upload endpoint return a UUID to identify upload instead of waiting for the file to process
+    * Add endpoint to retrieve file summary results based on UUID 
  * Try out multistage Dockerfiles
