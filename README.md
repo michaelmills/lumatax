@@ -3,6 +3,26 @@
 <img src="https://github.com/michaelmills/lumatax/blob/main/images/homepage.png" width="900">
 <img src="https://github.com/michaelmills/lumatax/blob/main/images/summary.png" width="900">
 
+## Challenge
+You are creating a web application that allows a user to
+1. upload and process sales transaction files submit a file
+    1. parse the file
+    1. validate each row
+    1. mark each row as valid/invalid (see validation rules below)
+    1. calculate sum of total sales, sum of total tax, and date range of all valid records in the file
+    1. persist the rows and summary data in a datastore of your choice  
+    
+2. render transaction file summary
+The field validation rules for the sales transactions are as follows:
+* invoice_id: required, alphanumeric
+* invoice_date: required, date
+* total_sales: required, numeric
+* total_tax: required, numeric
+* state: required, char, must be a valid state 2-char abbreviation (e.g. CA)
+* ship_to_zip: required, char, must be a 5-digit zipcode
+
+---
+
 ## Prerequisites
 The following software is required:
  * Node.js and Npm
