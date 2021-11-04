@@ -45,7 +45,7 @@ The following software is required:
 ## Build without script
 ### Build Spring Boot server
 1. Navigate to the lumatax-server in the project folder
-2. Run: mvn clean install
+2. Run: mvn clean install  
     This will build and create the docker image
 
 ### Build Angular frontend
@@ -59,10 +59,10 @@ The following software is required:
 2. Run docker images
 3. Make sure mrmills/lumatax-server and mrmills/lumatax-portal is present
 4. Navigate to the top folder of the lumatax project
-5. Run the server:
+5. Run the server:  
     docker run --publish 8082:80 --env-file ./lumatax-server/lumatax-server.env mrmills/lumatax-server:1.0.0
 6. Open another terminal and navigate to the top folder of the lumatax project
-7. Run the angular frontend:
+7. Run the angular frontend:  
     docker run --publish 80:80 --env-file ./lumatax-portal/lumatax-portal.env mrmills/lumatax-portal:1.0.0
 8. Nothing will appear on the terminal
 9. Open http://localhost in browser
