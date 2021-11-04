@@ -40,7 +40,9 @@ The following software is required:
 
 ---
 
-## Build and Run - Using script (w/ docker-compose)
+## Build and Run - Using script (w/ docker-compose)  
+*Preferred approach*  
+
 1. Open a terminal
 
 2. Navigate to top level folder of this project (Lumatax)
@@ -63,6 +65,8 @@ The following software is required:
 ---
 
 ## Build without script
+*This is a backup approach*  
+
 ### Build Spring Boot server
 1. Navigate to the lumatax-server in the project folder
 2. Run: mvn clean install  
@@ -73,13 +77,25 @@ The following software is required:
 2. Run: npm install
 2. Run: npm run docker_build
 
+### * Two approaches to running the application below  
 
-## Run without script
+## Run with Docker-compose
 1. Open a terminal
-2. Run docker images
-3. Make sure mrmills/lumatax-server and mrmills/lumatax-portal is present
-4. Navigate to the top folder of the lumatax project
-5. Run the server:  
+2. Run:  
+    docker images
+4. Make sure mrmills/lumatax-server and mrmills/lumatax-portal is present
+5. Navigate to the docker folder in the top level of project
+6. Run:  
+    docker-compose up (or 'docker-compose up -d' for detached mode)
+7. Open http://localhost in browser  
+
+## Run with only Docker
+1. Open a terminal
+2. Run:  
+    * docker images
+4. Make sure mrmills/lumatax-server and mrmills/lumatax-portal is present
+5. Navigate to the top folder of the lumatax project
+6. Run the server:  
     docker run --publish 8082:80 --env-file ./lumatax-server/lumatax-server.env mrmills/lumatax-server:1.0.0
 6. Open another terminal and navigate to the top folder of the lumatax project
 7. Run the angular frontend:  
