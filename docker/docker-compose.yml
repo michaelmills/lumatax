@@ -1,0 +1,14 @@
+version: '3'
+services:
+  lumatax-portal:
+    image: mrmills/lumatax-portal:1.0.0
+    env_file: ../lumatax-portal/lumatax-portal.env
+    ports:
+      - "80:80"
+    depends_on:
+      - lumatax-server
+  lumatax-server:
+    image: mrmills/lumatax-server:1.0.0
+    env_file: ../lumatax-server/lumatax-server.env
+    ports:
+      - "8082:80"
